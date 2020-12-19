@@ -53,3 +53,34 @@ Make a theme with styled components and use the color from the walk painting.
 make wire frame. Simple and eleganty. Or maybe it can flow better with something uneven.
 
 background changed colors during scroll to match frameless pictures. 
+
+Root:
+
+  Container
+
+    section
+      Header
+      GIF
+    __________
+
+    section
+      pic   h1
+    __________
+
+    section
+      h1    pic
+    __________
+    
+    section
+      pic   h1
+    __________
+    
+    section
+      h1    pic
+    __________
+      
+    section
+      pic   h1
+    __________
+
+  Footer
