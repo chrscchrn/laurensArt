@@ -6,22 +6,20 @@ import { Link } from 'gatsby'
 
 const Nav = () => {
     return (
-        <div>
-            <Flex
-                px={2}
-                color='white'
-                bg='black'
-                alignItems='center'>
-                <Text p={2} fontWeight='bold'>
-                    YARR
-                </Text>
-                <Box mx='auto' />
-                <Link variant='nav' to='/'>
-                    Front
-                </Link>
-            </Flex>
-        </div>
-    )
+        <Flex
+            px={2}
+            color='white'
+            bg='black'
+            alignItems='center'>
+            <Text p={2}>
+                YARR
+            </Text>
+            <Box mx='auto' />
+            <Link variant='nav' to='/'>
+                Front
+            </Link>
+        </Flex>
+    );
 }
 
 export default Nav

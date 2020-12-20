@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Box, Heading } from 'rebass'
-import anime from '../images/animehellyeah/animeGif.gif'
+import { Box, Heading, Image } from 'rebass'
+import anime from '../images/anime/animeGif.gif'
+import Layout from '../components/layout/layout'
 
 const IndexPage = () => {
     return (
-        <>
+        <Layout>
             <Box
                 bg="inherit"
                 sx={{
@@ -16,9 +17,9 @@ const IndexPage = () => {
                 <Heading
                     fontSize={[ 5, 6, 7 ]}
                     color='primary'>
-                    Yeah Im A Header
+                    Lauren Cochran
                 </Heading>
-                <img src={anime} width="768"/>
+                <Image src={anime} sx={{ width: [ '100%', '768px' ] }} alt="awesomeness"/>
                 <Link
                     to="work"
                     sx={{
@@ -31,7 +32,7 @@ const IndexPage = () => {
                     Enter At Your Own Awesomeness
                 </Link>
             </Box>
-        </>
+        </Layout>
     )
 }
 

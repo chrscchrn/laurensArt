@@ -54,6 +54,28 @@ make wire frame. Simple and eleganty. Or maybe it can flow better with something
 
 background changed colors during scroll to match frameless pictures. 
 
+/
+Root:
+
+  Container
+
+    Header
+      Title
+      subTitle
+
+      Something Interesting Maybe a Quote
+    
+    GIF
+
+
+    Enter button
+
+    Footer
+
+
+
+/work
+  - In this section I will have tinified version of these images and will only load the high res ones when needed
 Root:
 
   Container
