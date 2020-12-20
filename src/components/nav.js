@@ -8,16 +8,17 @@ const Nav = () => {
     return (
         <Flex
             px={2}
-            color='white'
-            bg='black'
-            alignItems='center'>
-            <Text p={2}>
+            color='black'
+            bg='primary'>
+            <Text p={3}>
                 YARR
             </Text>
             <Box mx='auto' />
-            <Link variant='nav' to='/'>
-                Front
-            </Link>
+            <Text p={3}>
+                <Link variant='nav' p={3} to='/'>
+                    Home
+                </Link>
+            </Text>
         </Flex>
     );
 }

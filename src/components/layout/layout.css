@@ -1,9 +1,13 @@
 @import "../../css/typography.css";
 
 body {
+    background-color: white !important;
     color: hsla(0, 0%, 0%, 0.8);
     font-family: "Rozha One", serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
+    text-align: center;
+    justify-content: space-evenly;
+    letter-spacing: 4px;
 }

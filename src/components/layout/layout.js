@@ -1,6 +1,6 @@
 import React from 'react'
-import { ThemeProvider } from '@emotion/react'
-import theme from '../theme/theme'
+import { ThemeProvider } from 'theme-ui'
+import theme from '../../gatsby-plugin-theme-ui/index'
 import './layout.css'
 
 const Layout = ({ children }) => {

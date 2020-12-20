@@ -1,21 +1,22 @@
 import * as React from "react"
-// import Header from '../components/header';
 import Nav from '../components/nav'
-import { Box, Flex, Heading, Image } from "rebass"
+import Header from "../components/header"
+import { Box, Flex, Image } from "rebass"
+import walk from '../images/MetashapeRenders/walk/walkrend1.png'
 
 const MainPage = () => {
   return (
     <Box
       sx={{
+        bg: "white",
         maxWidth: "100%",
         mx: 0,
         px: 0,
       }}>
       <Nav/>
-      <Heading
-        fontSize={[ 5, 6, 7 ]}>
-        Wow This is A Header That Can Be Any Length
-      </Heading>
+      <Header>
+        Collection
+      </Header>
       <Box
         sx={{
           maxWidth: 1024,
@@ -24,35 +25,35 @@ const MainPage = () => {
         }}>
         <Flex flexWrap='wrap' mx={4}>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src={walk} alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
-          </Box>
-        </Flex>
-        <Flex flexWrap='wrap' mx={4}>
-          <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
           </Box>
         </Flex>
         <Flex flexWrap='wrap' mx={4}>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
+          </Box>
+        </Flex>
+        <Flex flexWrap='wrap' mx={4}>
+          <Box px={2} py={1} width={1/3}>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
+          </Box>
+          <Box px={2} py={1} width={1/3}>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
+          </Box>
+          <Box px={2} py={1} width={1/3}>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
           </Box>
         </Flex>
       </Box>

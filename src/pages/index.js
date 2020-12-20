@@ -1,33 +1,33 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Box, Heading, Image } from 'rebass'
-import anime from '../images/anime/animeGif.gif'
+import { Box, Image } from 'rebass'
 import Layout from '../components/layout/layout'
+import Header from '../components/header'
+import anime from '../images/anime/animeGif.gif'
+
 
 const IndexPage = () => {
     return (
         <Layout>
             <Box
-                bg="inherit"
                 sx={{
                     maxWidth: 768,
                     mx: 'auto',
                     px: 3,
+                    textAlign: 'center',
                 }}>
-                <Heading
-                    fontSize={[ 5, 6, 7 ]}
-                    color='primary'>
+                <Header>
                     Lauren Cochran
-                </Heading>
+                </Header>
+                {/* <img src={walk}/> */}
                 <Image src={anime} sx={{ width: [ '100%', '768px' ] }} alt="awesomeness"/>
                 <Link
                     to="work"
                     sx={{
                         display: 'inline-block',
-                        fontWeight: 'bold',
+                        fontWeight: 'normal',
                         px: 2,
-                        py: 1,
-                        color: 'inherit',
+                        py: 4,
                     }}>
                     Enter At Your Own Awesomeness
                 </Link>
