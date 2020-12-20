@@ -1,7 +1,7 @@
 import * as React from "react"
 // import Header from '../components/header';
 import Nav from '../components/nav'
-import { Box, Flex, Heading } from "rebass"
+import { Box, Flex, Heading, Image } from "rebass"
 
 const MainPage = () => {
   return (
@@ -24,35 +24,35 @@ const MainPage = () => {
         }}>
         <Flex flexWrap='wrap' mx={4}>
           <Box px={2} py={1} width={1/3}>
-            <img src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <img src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <img src="https://via.placeholder.com/300" alt=""/>
-          </Box>
-        </Flex>
-        <Flex flexWrap='wrap' mx={4}>
-          <Box px={2} py={1} width={1/3}>
-            <img src="https://via.placeholder.com/300" alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <img src="https://via.placeholder.com/300" alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <img src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
           </Box>
         </Flex>
         <Flex flexWrap='wrap' mx={4}>
           <Box px={2} py={1} width={1/3}>
-            <img src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <img src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <img src="https://via.placeholder.com/300" alt=""/>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
+          </Box>
+        </Flex>
+        <Flex flexWrap='wrap' mx={4}>
+          <Box px={2} py={1} width={1/3}>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
+          </Box>
+          <Box px={2} py={1} width={1/3}>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
+          </Box>
+          <Box px={2} py={1} width={1/3}>
+            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/300" alt=""/>
           </Box>
         </Flex>
       </Box>
