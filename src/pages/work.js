@@ -1,16 +1,18 @@
 import * as React from "react"
-import Img from 'gatsby-image'
-import Nav from '../components/nav'
+import Nav from '../components/nav/nav'
 import Header from "../components/header"
+import MenuItem from '../components/menuItem/menuItem'
 import { Box, Flex } from "rebass"
-import walk from '../images/MetashapeRenders/walk/walkrend1.png'
 import { graphql, useStaticQuery } from "gatsby"
 
-
+const colors = [ 'pinkPrimary', 'lightBluePrimary' ];
 
 const MainPage = () => {
+
+  const bg = colors[Math.floor(Math.random() * colors.length)];
+
   
-  const data = useStaticQuery(graphql`
+  const { allFile: { edges } } = useStaticQuery(graphql`
     query MyQuery {
       allFile(filter: {relativeDirectory: {eq: "menuItems"}}) {
         edges {
@@ -30,7 +32,7 @@ const MainPage = () => {
       }
     }
   `)
-  
+
   return (
     <Box
       sx={{
@@ -39,7 +41,7 @@ const MainPage = () => {
         mx: 0,
         px: 0,
       }}>
-      <Nav/>
+      <Nav bg={bg}/>
       <Header>
         Collection
       </Header>
@@ -50,37 +52,19 @@ const MainPage = () => {
           px: 3,
         }}>
         <Flex flexWrap='wrap' mx={4}>
-          <Box px={2} py={1} width={1/3}>
-            <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Img fluid={data.allFile.edges[2].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
-          </Box>
+          <MenuItem fluid={edges[0]} film={bg}/>
+          <MenuItem fluid={edges[1]} film={bg}/>
+          <MenuItem fluid={edges[2]} film={bg}/>
         </Flex>
         <Flex flexWrap='wrap' mx={4}>
-          <Box px={2} py={1} width={1/3}>
-            <Img fluid={data.allFile.edges[3].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Img fluid={data.allFile.edges[4].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Img fluid={data.allFile.edges[5].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
-          </Box>
+          <MenuItem fluid={edges[3]} film={bg}/>
+          <MenuItem fluid={edges[4]} film={bg}/>
+          <MenuItem fluid={edges[5]} film={bg}/>
         </Flex>
         <Flex flexWrap='wrap' mx={4}>
-          <Box px={2} py={1} width={1/3}>
-            <Img fluid={data.allFile.edges[6].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Img fluid={data.allFile.edges[7].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Img fluid={data.allFile.edges[8].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
-          </Box>
+          <MenuItem fluid={edges[6]} film={bg}/>
+          <MenuItem fluid={edges[7]} film={bg}/>
+          <MenuItem fluid={edges[8]} film={bg}/>
         </Flex>
       </Box>
       <footer>

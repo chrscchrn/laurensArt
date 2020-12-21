@@ -1,15 +1,15 @@
 import React from 'react'
 import { Flex, Text, Box } from 'rebass'
 import { Link } from 'gatsby'
-// import { Switch } from '@rebass/forms'
-{/* <Switch/> */}
+// import './nav.css'
 
-const Nav = () => {
+const Nav = ({ bg }) => {
     return (
         <Flex
+            className="nav"
             px={2}
             color='black'
-            bg='darkMatte'>
+            bg={bg}>
             <Text p={3}>
                 YARR
             </Text>

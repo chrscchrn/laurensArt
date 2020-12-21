@@ -75,7 +75,7 @@ Root:
 
 
 /work
-  - In this section I will have tinified version of these images and will only load the high res ones when needed
+  - Menu color scheme should change every time you visit it or every 10 seconds
 Root:
 
   Container
