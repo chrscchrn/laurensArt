@@ -15,7 +15,10 @@ export default {
         lightBlue: "#e7f2ff",
         black: "hsla(0, 0%, 0%, 0.8)",
         primary: "#567d8d",
-        secondary :"gray",
+        secondary :"#afbbd6",
+        darkSecondary: "#9298a9",
+        darkMatte: "#a3a8a1",
+        moreDark: "#979793",
     },
     lineHeights: {
         body: 1.5,

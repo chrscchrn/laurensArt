@@ -5,8 +5,20 @@ import Layout from '../components/layout/layout'
 import Header from '../components/header'
 import anime from '../images/anime/animeGif.gif'
 
+export const query = graphql`
+    query {
+        file(relativePath: { eq: "anime/animeGif.gif" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+    console.log(data)
     return (
         <Layout>
             <Box
@@ -19,7 +31,6 @@ const IndexPage = () => {
                 <Header>
                     Lauren Cochran
                 </Header>
-                {/* <img src={walk}/> */}
                 <Image src={anime} sx={{ width: [ '100%', '768px' ] }} alt="awesomeness"/>
                 <Link
                     to="work"

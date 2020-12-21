@@ -5,7 +5,7 @@ const Header = ({ children }) => {
     return (
         <Heading
             fontSize={[ 5, 6, 7 ]}
-            py={5}
+            py={4}
             sx={{ 
                 color: "black",
                 fontFamily: 'Rozha One', 

@@ -1,10 +1,36 @@
 import * as React from "react"
+import Img from 'gatsby-image'
 import Nav from '../components/nav'
 import Header from "../components/header"
-import { Box, Flex, Image } from "rebass"
+import { Box, Flex } from "rebass"
 import walk from '../images/MetashapeRenders/walk/walkrend1.png'
+import { graphql, useStaticQuery } from "gatsby"
+
+
 
 const MainPage = () => {
+  
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allFile(filter: {relativeDirectory: {eq: "menuItems"}}) {
+        edges {
+          node {
+            base
+            childImageSharp {
+              fluid {
+                aspectRatio
+                base64
+                sizes
+                srcSet
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  
   return (
     <Box
       sx={{
@@ -25,39 +51,39 @@ const MainPage = () => {
         }}>
         <Flex flexWrap='wrap' mx={4}>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src={walk} alt=""/>
+            <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
+            <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
-          </Box>
-        </Flex>
-        <Flex flexWrap='wrap' mx={4}>
-          <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
-          </Box>
-          <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
+            <Img fluid={data.allFile.edges[2].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
           </Box>
         </Flex>
         <Flex flexWrap='wrap' mx={4}>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
+            <Img fluid={data.allFile.edges[3].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
+            <Img fluid={data.allFile.edges[4].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
           </Box>
           <Box px={2} py={1} width={1/3}>
-            <Image sx={{ width: [ '100%' ] }} src="https://via.placeholder.com/400" alt=""/>
+            <Img fluid={data.allFile.edges[5].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
+          </Box>
+        </Flex>
+        <Flex flexWrap='wrap' mx={4}>
+          <Box px={2} py={1} width={1/3}>
+            <Img fluid={data.allFile.edges[6].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
+          </Box>
+          <Box px={2} py={1} width={1/3}>
+            <Img fluid={data.allFile.edges[7].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
+          </Box>
+          <Box px={2} py={1} width={1/3}>
+            <Img fluid={data.allFile.edges[8].node.childImageSharp.fluid} sx={{ width: [ '100%' ] }} src={walk} alt=""/>
           </Box>
         </Flex>
       </Box>
-      <footer >
+      <footer>
         This is a footer and I will put a lot of padding on the bottom
       </footer>
     </Box>

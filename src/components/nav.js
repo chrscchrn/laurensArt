@@ -9,7 +9,7 @@ const Nav = () => {
         <Flex
             px={2}
             color='black'
-            bg='primary'>
+            bg='darkMatte'>
             <Text p={3}>
                 YARR
             </Text>
