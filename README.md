@@ -76,6 +76,7 @@ Root:
 
 /work
   - sort through photos and add titles accordingly
+  - also make the margin and padding in [ 3, 4, 5] format for responsiveness 
 Root:
 
   Container
