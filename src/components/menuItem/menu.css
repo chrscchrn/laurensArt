@@ -1,12 +1,10 @@
-.overlay {
-    overflow: hidden;
-}
-
 .menuImage {
-    opacity: 0.6;
+    opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
+    object-fit: cover;
 }
 
 .menuImage:hover {
-    opacity: .3;
+    opacity: 0.2;
 }
+

@@ -1,19 +1,9 @@
-.nav {
-    -webkit-animation: background 30s cubic-bezier(.5,.5,.5,.5) infinite;
-    animation: background 30s cubic-bezier(.5,.5,.5,.5) infinite;  
-  }
+.nav-link {
+  text-decoration: none; 
+  color: white; 
+}
   
-  
-  @-webkit-keyframes background {
-    0% { background-color:#ffe6e6; }
-    33% { background-color: #e7f2ff; }  
-    67% { background-color: #a3a8a1; }
-    100% { background-color: #979793; }
-  }
-  
-  @keyframes background {
-    0% { background-color: #ffe6e6; }
-    33% { background-color: #e7f2ff; }  
-    67% { background-color:#a3a8a1; }
-    100% { background-color: #979793; }
+.nav-link:hover {
+  text-decoration: underline;
+  color: hsla(0, 0%, 0%, 0.8);
 }

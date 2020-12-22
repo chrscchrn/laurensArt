@@ -5,20 +5,11 @@ import Layout from '../components/layout/layout'
 import Header from '../components/header'
 import anime from '../images/anime/animeGif.gif'
 
-export const query = graphql`
-    query {
-        file(relativePath: { eq: "anime/animeGif.gif" }) {
-            childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-    }
-`
+const IndexPage = () => {
+    
+    // pick random dark color theme for header and link
+    const bgColors = [ 'pinkPrimary', 'lightBluePrimary', 'purplePrimary', 'creamPrimary' ];
 
-const IndexPage = ({ data }) => {
-    console.log(data)
     return (
         <Layout>
             <Box

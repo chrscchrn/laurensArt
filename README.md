@@ -75,7 +75,7 @@ Root:
 
 
 /work
-  - Menu color scheme should change every time you visit it or every 10 seconds
+  - sort through photos and add titles accordingly
 Root:
 
   Container

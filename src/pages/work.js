@@ -5,11 +5,11 @@ import MenuItem from '../components/menuItem/menuItem'
 import { Box, Flex } from "rebass"
 import { graphql, useStaticQuery } from "gatsby"
 
-const colors = [ 'pinkPrimary', 'lightBluePrimary', 'purplePrimary', 'creamPrimary' ];
+const bgColors = [ 'pinkPrimary', 'lightBluePrimary', 'purplePrimary', 'creamPrimary' ];
 
 const MainPage = () => {
 
-  const bg = colors[Math.floor(Math.random() * colors.length)];
+  const bg = bgColors[Math.floor(Math.random() * bgColors.length)];
 
   
   const { allFile: { edges } } = useStaticQuery(graphql`

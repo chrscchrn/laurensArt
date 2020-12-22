@@ -1,7 +1,8 @@
 import React from 'react'
 import { Flex, Text, Box } from 'rebass'
 import { Link } from 'gatsby'
-// import './nav.css'
+import { css } from '@emotion/react'
+import './nav.css'
 
 const Nav = ({ bg }) => {
     return (
@@ -10,12 +11,12 @@ const Nav = ({ bg }) => {
             px={2}
             color='black'
             bg={bg}>
-            <Text p={3}>
+            <Text p={3} color="white">
                 YARR
             </Text>
             <Box mx='auto' />
             <Text p={3}>
-                <Link variant='nav' p={3} to='/'>
+                <Link variant='nav' p={3} to='/' className="nav-link">
                     Home
                 </Link>
             </Text>
