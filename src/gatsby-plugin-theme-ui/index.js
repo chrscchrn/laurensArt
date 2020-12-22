@@ -16,7 +16,7 @@ export default {
         otherBlack:"#232323",
         lightBluePrimary: "#bedcff",
         blueDark: "#b3d2f8",
-        pinkPrimary: "#ffe6e6",
+        pinkPrimary: "#fad2d2",
         pinkDark: "#ffd0d0",
         purplePrimary: "#d1cde8",
         purpleDark: "#b4abea",

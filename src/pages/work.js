@@ -31,7 +31,7 @@ const MainPage = () => {
       }
     }
   `)
-
+    console.log(edges)
   return (
     <Box
       sx={{

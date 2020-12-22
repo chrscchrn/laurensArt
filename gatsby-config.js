@@ -2,6 +2,7 @@ module.exports = {
   pathPrefix: "/laurensArt",
   siteMetadata: {
     title: "laurens-art",
+    siteUrl: "https://chrscchrn.github.io/laurensArt/"
   },
   plugins: [
     "gatsby-plugin-sharp",
