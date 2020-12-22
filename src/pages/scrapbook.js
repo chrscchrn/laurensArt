@@ -4,6 +4,7 @@ import Nav from '../components/nav/nav';
 import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from "gatsby"
 import sortFiles from '../func/sortFiles'
+import { Box } from 'rebass';
 
 
 const Scrapbook = () => {
@@ -39,8 +40,15 @@ const Scrapbook = () => {
 
     return (
         <Layout>
-            <Nav bg="pinkPrimary"/>
-            {images}
+            <Box
+                sx={{
+                    maxWidth: "100%",
+                    mx: 0,
+                    px: 0,
+                }}>
+                <Nav bg="pinkPrimary"/>
+                {images}
+            </Box>
         </Layout>
     )
 }

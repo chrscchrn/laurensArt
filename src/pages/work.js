@@ -84,11 +84,9 @@ const MainPage = () => {
       if (node.node.base === page.base) {
         node.title = page.title;
         node.url = page.url;
-        console.log('found')
       }
     }
   }
-  console.log(edges);
     
   return (
     <Box

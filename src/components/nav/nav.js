@@ -8,7 +8,6 @@ const Nav = ({ bg }) => {
         <Flex
             className="nav"
             px={2}
-            color='black'
             bg={bg}>
             <Text p={3} color="white">
                 YARR

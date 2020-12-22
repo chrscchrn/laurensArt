@@ -4,10 +4,10 @@ import Header from '../components/header'
 import Layout from '../components/layout/layout'
 import Nav from '../components/nav/nav'
 
-const Charcoal = () => {
+const Memory = () => {
     return (
         <Layout>
-            <Nav bg="black"/>
+            <Nav bg="greenDark"/>
             <Box
                 sx={{
                     maxWidth: 768,
@@ -16,7 +16,7 @@ const Charcoal = () => {
                     textAlign: 'center',
                 }}>
                 <Header c="black"fontSize={[4, 5, 6]}>
-                    Other Charcoal Drawings
+                    Other Memory Drawings
                 </Header>
 
             </Box>
@@ -47,4 +47,4 @@ const Charcoal = () => {
     )
 }
 
-export default Charcoal
+export default Memory
