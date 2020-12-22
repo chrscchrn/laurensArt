@@ -31,7 +31,7 @@ const Scrapbook = () => {
     
     useEffect(() => {
         edges = sortFiles(edges);
-    }, [edges])
+    }, [ edges ])
     
     let images = edges.map(i => {
         return <Img fluid={i.node.childImageSharp.fluid} alt=""/>
@@ -39,7 +39,7 @@ const Scrapbook = () => {
 
     return (
         <Layout>
-            <Nav bg="pinkDark"/>
+            <Nav bg="pinkPrimary"/>
             {images}
         </Layout>
     )

@@ -8,8 +8,55 @@ import { graphql, useStaticQuery } from "gatsby"
 const bgColors = [ 'pinkPrimary pinkDark', 'lightBluePrimary blueDark', 'purplePrimary purpleDark', 'creamPrimary creamDark', 'greenPrimary greenDark' ];
 const [ bg, d ] = bgColors[Math.floor(Math.random() * bgColors.length)].split(" ");
 
-const MainPage = () => {
+const directory = [
+  {
+    title: "Artichoke",
+    url: "/artichoke",
+    base: "artichoke.jpg"
+  },
+  {
+    title: "Scrapbook",
+    url: "/scrapbook",
+    base: "insideCover.png"
+  },
+  {
+    title: "Providence",
+    url: "/providence",
+    base: "map.jpg"
+  },
+  {
+    title: "Memory",
+    url: "/memory",
+    base: "wii.jpg"
+  },
+  {
+    title: "Charcoal",
+    url: "/charcoal",
+    base: "BENEFITST.S.jpg"
+  },
+  {
+    title: "Metashape",
+    url: "/metashape",
+    base: "me5.jpg"
+  },
+  {
+    title: "Sound Design",
+    url: "/sound",
+    base: "audio.jpg"
+  },
+  {
+    title: "Walk",
+    url: "/walk",
+    base: "walkrend1.png"
+  },
+  {
+    title: "Useless Utensil",
+    url: "/utensils",
+    base: "utensils.png"
+  },
+];
 
+const MainPage = () => {
   
   const { allFile: { edges } } = useStaticQuery(graphql`
     query MyQuery {
@@ -30,8 +77,19 @@ const MainPage = () => {
         }
       }
     }
-  `)
-    console.log(edges)
+  `);
+
+  for (let node of edges) {
+    for (let page of directory) {
+      if (node.node.base === page.base) {
+        node.title = page.title;
+        node.url = page.url;
+        console.log('found')
+      }
+    }
+  }
+  console.log(edges);
+    
   return (
     <Box
       sx={{
@@ -41,7 +99,7 @@ const MainPage = () => {
         px: 0,
       }}>
       <Nav bg={bg}/>
-      <Header c={d}>
+      <Header c={d} fontSize={[5, 6, 7]}>
         Collection
       </Header>
       <Box

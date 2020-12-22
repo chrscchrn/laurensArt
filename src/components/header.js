@@ -1,10 +1,10 @@
 import React from 'react'
 import { Heading } from 'rebass'
 
-const Header = ({ children, c }) => {
+const Header = ({ children, c, fontSize }) => {
     return (
         <Heading
-            fontSize={[ 5, 6, 7 ]}
+            fontSize={fontSize}
             py={4}
             sx={{ 
                 color: `${c}`,
