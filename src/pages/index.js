@@ -23,14 +23,11 @@ const IndexPage = () => {
                     Lauren Cochran
                 </Header>
                 <Image src={anime} sx={{ width: [ '100%', '768px' ] }} alt="awesomeness"/>
-                <Link
-                    to="work"
-                    sx={{
-                        display: 'inline-block',
-                        fontWeight: 'normal',
-                        px: 2,
-                        py: 4,
-                    }}>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <Link to="work">
                     Enter At Your Own Awesomeness
                 </Link>
             </Box>

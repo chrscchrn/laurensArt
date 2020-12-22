@@ -5,12 +5,11 @@ import MenuItem from '../components/menuItem/menuItem'
 import { Box, Flex } from "rebass"
 import { graphql, useStaticQuery } from "gatsby"
 
-const bgColors = [ 'pinkPrimary', 'lightBluePrimary', 'purplePrimary', 'creamPrimary' ];
+const bgColors = [ 'pinkPrimary pinkDark', 'lightBluePrimary blueDark', 'purplePrimary purpleDark', 'creamPrimary creamDark', 'greenPrimary greenDark' ];
 
 const MainPage = () => {
 
-  const bg = bgColors[Math.floor(Math.random() * bgColors.length)];
-
+  const [ bg, d ] = bgColors[Math.floor(Math.random() * bgColors.length)].split(" ");
   
   const { allFile: { edges } } = useStaticQuery(graphql`
     query MyQuery {
@@ -42,7 +41,7 @@ const MainPage = () => {
         px: 0,
       }}>
       <Nav bg={bg}/>
-      <Header>
+      <Header c={d}>
         Collection
       </Header>
       <Box
@@ -68,7 +67,7 @@ const MainPage = () => {
         </Flex>
       </Box>
       <footer>
-        This is a footer and I will put a lot of padding on the bottom
+        &copy; Lauren Cochran | Design by her awesome brother
       </footer>
     </Box>
   )
