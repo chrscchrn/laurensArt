@@ -5,7 +5,7 @@ import MenuItem from '../components/menuItem/menuItem'
 import { Box, Flex } from "rebass"
 import { graphql, useStaticQuery } from "gatsby"
 
-const colors = [ 'pinkPrimary', 'lightBluePrimary' ];
+const colors = [ 'pinkPrimary', 'lightBluePrimary', 'purplePrimary', 'creamPrimary' ];
 
 const MainPage = () => {
 
@@ -52,19 +52,19 @@ const MainPage = () => {
           px: 3,
         }}>
         <Flex flexWrap='wrap' mx={4}>
-          <MenuItem fluid={edges[0]} film={bg}/>
-          <MenuItem fluid={edges[1]} film={bg}/>
-          <MenuItem fluid={edges[2]} film={bg}/>
+          <MenuItem fluid={edges[0]} bg={bg}/>
+          <MenuItem fluid={edges[1]} bg={bg}/>
+          <MenuItem fluid={edges[2]} bg={bg}/>
         </Flex>
         <Flex flexWrap='wrap' mx={4}>
-          <MenuItem fluid={edges[3]} film={bg}/>
-          <MenuItem fluid={edges[4]} film={bg}/>
-          <MenuItem fluid={edges[5]} film={bg}/>
+          <MenuItem fluid={edges[3]} bg={bg}/>
+          <MenuItem fluid={edges[4]} bg={bg}/>
+          <MenuItem fluid={edges[5]} bg={bg}/>
         </Flex>
         <Flex flexWrap='wrap' mx={4}>
-          <MenuItem fluid={edges[6]} film={bg}/>
-          <MenuItem fluid={edges[7]} film={bg}/>
-          <MenuItem fluid={edges[8]} film={bg}/>
+          <MenuItem fluid={edges[6]} bg={bg}/>
+          <MenuItem fluid={edges[7]} bg={bg}/>
+          <MenuItem fluid={edges[8]} bg={bg}/>
         </Flex>
       </Box>
       <footer>
