@@ -6,10 +6,10 @@ import { Box, Flex } from "rebass"
 import { graphql, useStaticQuery } from "gatsby"
 
 const bgColors = [ 'pinkPrimary pinkDark', 'lightBluePrimary blueDark', 'purplePrimary purpleDark', 'creamPrimary creamDark', 'greenPrimary greenDark' ];
+const [ bg, d ] = bgColors[Math.floor(Math.random() * bgColors.length)].split(" ");
 
 const MainPage = () => {
 
-  const [ bg, d ] = bgColors[Math.floor(Math.random() * bgColors.length)].split(" ");
   
   const { allFile: { edges } } = useStaticQuery(graphql`
     query MyQuery {

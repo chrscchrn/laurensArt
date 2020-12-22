@@ -14,7 +14,7 @@ export default {
     colors: {
         black: "hsla(0, 0%, 0%, 0.8)",
         otherBlack:"#232323",
-        lightBluePrimary: "#e7f2ff",
+        lightBluePrimary: "#bedcff",
         blueDark: "#b3d2f8",
         pinkPrimary: "#ffe6e6",
         pinkDark: "#ffd0d0",
