@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"8k0H":function(t,n,e){"use strict";e("q1tI");var c=e("dCk4"),o=e("2QYI"),r=(e("EgAo"),e("AeFk"));n.a=function(t){var n=t.children;return Object(r.a)(c.a,{theme:o.a},n)}},EgAo:function(t,n,e){},uIYW:function(t,n,e){"use strict";e.r(n);e("q1tI");var c=e("8k0H"),o=e("AeFk");n.default=function(){return Object(o.a)(c.a,null,"This is the correct Font.")}}}]);
-//# sourceMappingURL=component---src-pages-charcoal-js-43ae0c734f8cac328c83.js.map
