@@ -27,22 +27,22 @@ const directory = [
   {
     title: "Memory",
     url: "/memory",
-    base: "wii.jpg"
+    base: "wii.png"
   },
   {
     title: "Charcoal",
     url: "/charcoal",
-    base: "BENEFITST.S.jpg"
+    base: "BENEFITST.jpg"
   },
   {
     title: "Metashape",
     url: "/metashape",
-    base: "me5.jpg"
+    base: "me5.png"
   },
   {
     title: "Sound Design",
     url: "/sound",
-    base: "audio.jpg"
+    base: "audio.png"
   },
   {
     title: "Walk",
@@ -52,7 +52,7 @@ const directory = [
   {
     title: "Useless Utensil",
     url: "/utensils",
-    base: "utensils.png"
+    base: "utensils.jpg"
   },
 ];
 

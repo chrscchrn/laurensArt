@@ -4,13 +4,13 @@
 
 
 .menuImage {
-    opacity: 0.6;
+    opacity: 0.35;
     transition: opacity 0.4s ease-in-out;
     object-fit: cover;
 }
 
 .menuImage:hover {
-    opacity: 0.1;
+    opacity: 0.05;
 }
 
 .menuTitle {
@@ -19,7 +19,7 @@
 }
 
 .overWrapper {
-    
+    margin: 10vh 0 !important;
     position: absolute;
     text-align: center;
     width: 100%;
