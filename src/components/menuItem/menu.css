@@ -20,6 +20,7 @@
 
 .overWrapper {
     margin: 10vh 0 !important;
+    /* padding: 10vh 0 !important; */
     position: absolute;
     text-align: center;
     width: 100%;
