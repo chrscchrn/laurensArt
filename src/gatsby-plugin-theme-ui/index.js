@@ -1,5 +1,5 @@
 export default {
-    breakpoints: ['40em', '52em', '64em'],
+    breakpoints: ['450px', '768px', '1200px'],
     fontSizes: [
         12, 14, 16, 20, 24, 32, 48, 64
     ],
@@ -15,9 +15,9 @@ export default {
         black: "hsla(0, 0%, 0%, 0.8)",
         otherBlack:"#232323",
         lightBluePrimary: "#aad1ff",
-        blueDark: "#9ecaff",
+        blueDark: "#6fb0ff",
         pinkPrimary: "#fad2d2",
-        pinkDark: "#ffd0d0",
+        pinkDark: "#ffc9c9",
         purplePrimary: "#c2bce7",
         purpleDark: "#b4abea",
         creamPrimary: "#d5c1ae",

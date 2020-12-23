@@ -101,22 +101,22 @@ const MainPage = () => {
         Collection
       </Header>
       <Box
+        my={[4, 3, 0]}
         sx={{
           maxWidth: 1024,
           mx: 'auto',
-          px: 3,
         }}>
-        <Flex flexWrap='wrap' mx={4}>
+        <Flex flexWrap='wrap' mx={[0, 1, 3]}>
           <MenuItem fluid={edges[0]} bg={bg}/>
           <MenuItem fluid={edges[1]} bg={bg}/>
           <MenuItem fluid={edges[2]} bg={bg}/>
         </Flex>
-        <Flex flexWrap='wrap' mx={4}>
+        <Flex flexWrap='wrap' mx={[0, 1, 3]}>
           <MenuItem fluid={edges[3]} bg={bg}/>
           <MenuItem fluid={edges[4]} bg={bg}/>
           <MenuItem fluid={edges[5]} bg={bg}/>
         </Flex>
-        <Flex flexWrap='wrap' mx={4}>
+        <Flex flexWrap='wrap' mx={[0, 1, 3]}>
           <MenuItem fluid={edges[6]} bg={bg}/>
           <MenuItem fluid={edges[7]} bg={bg}/>
           <MenuItem fluid={edges[8]} bg={bg}/>
