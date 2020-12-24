@@ -19,8 +19,10 @@
 }
 
 .overWrapper {
-    margin: 10vh 0 !important;
-    /* padding: 10vh 0 !important; */
+    margin: 10vh 0vh !important;
+    /* padding: 0vh 1vh !important; */
+    padding-right: 3vh;
+    padding-left: 1vh;
     position: absolute;
     text-align: center;
     width: 100%;

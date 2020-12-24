@@ -10,7 +10,7 @@ const [ bg, d ] = bgColors[Math.floor(Math.random() * bgColors.length)].split(" 
 
 const directory = [
   {
-    title: "Artichoke",
+    title: "Artichoke Series",
     url: "/artichoke",
     base: "artichoke.jpg"
   },
@@ -20,22 +20,22 @@ const directory = [
     base: "insideCover.png"
   },
   {
-    title: "Providence",
+    title: "Providence Map",
     url: "/providence",
     base: "map.jpg"
   },
   {
-    title: "Memory",
+    title: "Memory Palace",
     url: "/memory",
     base: "wii.png"
   },
   {
-    title: "Charcoal",
+    title: "Charcoal Drawings",
     url: "/charcoal",
     base: "BENEFITST.jpg"
   },
   {
-    title: "Metashape",
+    title: "Metashape Portrait",
     url: "/metashape",
     base: "me5.png"
   },
@@ -45,12 +45,12 @@ const directory = [
     base: "audio.png"
   },
   {
-    title: "Walk",
+    title: "Walk on Chalkfield St",
     url: "/walk",
     base: "walkrend1.png"
   },
   {
-    title: "Useless Utensil",
+    title: "Useless Utensils",
     url: "/utensils",
     base: "utensils.jpg"
   },

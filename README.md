@@ -8,6 +8,10 @@
 </h1>
 
 
+1. replace :hover with a more mobile friendly verison
+2. Fix mq details 
+3. ordering on scrapbook 
+4. <del>titles on work</del>
 
 ## useful stuff
 
