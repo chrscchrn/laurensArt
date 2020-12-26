@@ -59,7 +59,7 @@ const Charcoal = () => {
                 </Header>
 
             </Box>
-
+            
             {images}
 
             <Footer/>
