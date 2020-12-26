@@ -4,6 +4,7 @@ import Header from "../components/header"
 import MenuItem from '../components/menuItem/menuItem'
 import { Box, Flex } from "rebass"
 import { graphql, useStaticQuery } from "gatsby"
+import Footer from "../components/footer/footer"
 
 const bgColors = [ 'pinkPrimary pinkDark', 'lightBluePrimary blueDark', 'purplePrimary purpleDark', 'creamPrimary creamDark', 'greenPrimary greenDark' ];
 const [ bg, d ] = bgColors[Math.floor(Math.random() * bgColors.length)].split(" ");
@@ -51,7 +52,7 @@ const directory = [
   },
   {
     title: "Useless Utensils",
-    url: "/utensils",
+    url: "/uselessUtensils",
     base: "utensils.jpg"
   },
 ];
@@ -122,9 +123,7 @@ const MainPage = () => {
           <MenuItem fluid={edges[8]} bg={bg}/>
         </Flex>
       </Box>
-      <footer>
-        &copy; Lauren Cochran | Design by her awesome brother
-      </footer>
+      <Footer/>
     </Box>
   )
 }

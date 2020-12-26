@@ -1,0 +1,11 @@
+footer {
+    padding-top: 3rem;
+}
+
+#footerContainer {
+    padding: 6rem 12rem 3rem 12rem;
+}
+
+#footerBorder {
+    border: 1px solid rgba(128, 128, 128, 0.247);
+}

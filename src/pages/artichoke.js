@@ -1,6 +1,7 @@
 import Img from 'gatsby-image'
 import React from 'react'
 import { Box, Text } from 'rebass'
+import Footer from '../components/footer/footer'
 import Header from '../components/header'
 import Layout from '../components/layout/layout'
 import Nav from '../components/nav/nav'
@@ -147,7 +148,7 @@ const Artichoke = () => {
                 {/* <Img src=""/> */}
                 <img src="https://via.placeholder.com/512" />
             </Box>
-            
+            <Footer/>
         </Layout>
     )
 }

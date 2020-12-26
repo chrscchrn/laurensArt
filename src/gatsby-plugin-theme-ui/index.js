@@ -28,6 +28,7 @@ export default {
         darkSecondary: "#9298a9",
         darkMatte: "#a3a8a1",
         moreDark: "#979793",
+        gray: "#252525d4",
     },
     lineHeights: {
         body: 1.5,

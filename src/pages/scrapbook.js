@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Layout from '../components/layout/layout'
 import Nav from '../components/nav/nav';
 import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from "gatsby"
-import sortFiles from '../func/sortFiles'
 import { Box } from 'rebass';
 
 
@@ -30,12 +29,26 @@ const Scrapbook = () => {
         }
     `)
     
-    useEffect(() => {
-        edges = sortFiles(edges);
-    }, [ edges ])
-    
-    let images = edges.map(i => {
-        return <Img fluid={i.node.childImageSharp.fluid} alt=""/>
+    let arr = [];
+    for (let fluid of edges) {
+        switch (fluid.node.base) {
+            case 'a.png':
+                arr[0] = fluid.node.childImageSharp.fluid;
+                break;
+            case 'b.png':
+                arr[1] = fluid.node.childImageSharp.fluid;
+                break;
+            case 'c.png':
+                arr[2] = fluid.node.childImageSharp.fluid;
+                break;
+            case 'd.png':
+                arr[3] = fluid.node.childImageSharp.fluid;
+                break; 
+        }
+    }
+
+    let images = arr.map(img => {
+        return <Img fluid={img}/>
     })
 
     return (

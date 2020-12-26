@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, Text } from 'rebass'
+import { Box } from 'rebass'
+import Footer from '../components/footer/footer'
 import Header from '../components/header'
 import Layout from '../components/layout/layout'
 import Nav from '../components/nav/nav'
@@ -20,7 +21,7 @@ const Utensils = () => {
                 </Header>
 
             </Box>
-
+            <Footer/>
         </Layout>
     )
 }
