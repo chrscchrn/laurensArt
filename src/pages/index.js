@@ -6,9 +6,6 @@ import Header from '../components/header'
 import anime from '../images/anime/animeGif.gif'
 
 const IndexPage = () => {
-    
-    // pick random dark color theme for header and link
-    // const bgColors = [ 'pinkPrimary', 'lightBluePrimary', 'purplePrimary', 'creamPrimary' ];
 
     return (
         <Layout>

@@ -5,8 +5,55 @@ import Footer from '../components/footer/footer'
 import Header from '../components/header'
 import Layout from '../components/layout/layout'
 import Nav from '../components/nav/nav'
+import { graphql, useStaticQuery } from "gatsby"
 
 const Artichoke = () => {
+
+    let { allFile: { edges } } = useStaticQuery(graphql`
+        query {
+            allFile(filter: {relativeDirectory: {eq: "artichoke"}}) {
+                edges {
+                    node {
+                        base
+                        childImageSharp {
+                            fluid {
+                            aspectRatio
+                            base64
+                            sizes
+                            src
+                            srcSet
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `)
+
+    let one, two, three, four, final;
+    for (let img of edges) {
+        switch (img.node.base) {
+            case '1.jpg':
+                one = img.node.childImageSharp.fluid;
+                break;
+            case '2.jpg':
+                two = img.node.childImageSharp.fluid;
+                break;
+            case '3.jpg':
+                three = img.node.childImageSharp.fluid;
+                break;
+            case '4.jpg':
+                four = img.node.childImageSharp.fluid;
+                break;
+            case 'final.jpg':
+                final = img.node.childImageSharp.fluid;
+                break;
+            default: 
+                break;
+        }
+    }
+
+
     return (
         <Layout>
             <Nav bg="black"/>
@@ -20,7 +67,6 @@ const Artichoke = () => {
                 <Header c="black"fontSize={[4, 5, 6]}>
                     A focus on a single artichoke from the same point of view, five times.
                 </Header>
-
             </Box>
 
             <Box
@@ -30,8 +76,7 @@ const Artichoke = () => {
                     px: 0,
                     py: 4,
                 }}>
-                {/* <Img src=""/> */}
-                <img src="https://via.placeholder.com/512" />
+                <Img fluid={one} alt=""/>
             </Box>
 
             <Box
@@ -53,8 +98,7 @@ const Artichoke = () => {
                     px: 0,
                     py: 4,
                 }}>
-                {/* <Img src=""/> */}
-                <img src="https://via.placeholder.com/512" />
+                <Img fluid={two} alt=""/>
             </Box>
 
             <Box
@@ -76,8 +120,7 @@ const Artichoke = () => {
                     px: 0,
                     py: 4,
                 }}>
-                {/* <Img src=""/> */}
-                <img src="https://via.placeholder.com/512" />
+                <Img fluid={three} alt=""/>
             </Box>
 
             <Box
@@ -99,8 +142,7 @@ const Artichoke = () => {
                     px: 0,
                     py: 4,
                 }}>
-                {/* <Img src=""/> */}
-                <img src="https://via.placeholder.com/512" />
+                <Img fluid={four} alt=""/>
             </Box>
 
             <Box
@@ -122,8 +164,7 @@ const Artichoke = () => {
                     px: 0,
                     py: 4,
                 }}>
-                {/* <Img src=""/> */}
-                <img src="https://via.placeholder.com/512" />
+                <Img fluid={final} alt=""/>
             </Box>
 
             <Box
@@ -137,24 +178,9 @@ const Artichoke = () => {
                     Artichoke sitting in a formal dining room staring at a grey fox skull compressed charcoal, combination of realism and minimalism to induce emotions from artichoke - personification, 2 hrs.
                 </Text>
             </Box>
-
-            <Box
-                sx={{
-                    maxWidth: 512,
-                    mx: 'auto',
-                    px: 0,
-                    py: 4,
-                }}>
-                {/* <Img src=""/> */}
-                <img src="https://via.placeholder.com/512" />
-            </Box>
             <Footer/>
         </Layout>
     )
 }
 
 export default Artichoke
-
-// ARTICHOKE 4: Brown and orange conte crayons, brown focused on tone, orange focused on line, quick draw, 10 min.
-// ARTICHOKE 5: Lines created from charcoal residue on finger tips, focus on range of pressure to create depth, 20 min.
-// ARTICHOKE FINAL: 

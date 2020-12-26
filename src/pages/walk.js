@@ -1,11 +1,35 @@
 import React from 'react'
-import { Box, Text } from 'rebass'
+import { Box } from 'rebass'
 import Header from '../components/header'
 import Layout from '../components/layout/layout'
 import Nav from '../components/nav/nav'
 import Footer from '../components/footer/footer'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const Walk = () => {
+
+    let { allFile: { edges } } = useStaticQuery(graphql`
+        query {
+            allFile(filter: {relativeDirectory: {eq: "walk"}}) {
+                edges {
+                    node {
+                        base
+                        childImageSharp {
+                            fluid {
+                                aspectRatio
+                                base64
+                                sizes
+                                src
+                                srcSet
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `)
+    
     return (
         <Layout>
             <Nav bg="lightBluePrimary"/>
@@ -17,7 +41,7 @@ const Walk = () => {
                     textAlign: 'center',
                 }}>
                 <Header c="black"fontSize={[4, 5, 6]}>
-                    Other Walk Drawings
+                    A 3D render of a Walk I Took in Brown University
                 </Header>
 
             </Box>
@@ -29,21 +53,40 @@ const Walk = () => {
                     px: 0,
                     py: 4,
                 }}>
-                {/* <Img src=""/> */}
-                <img src="https://via.placeholder.com/512" />
+                <Img fluid={edges[1].node.childImageSharp.fluid}/>
             </Box>
 
             <Box
                 sx={{
-                    maxWidth: 768,
+                    maxWidth: 512,
                     mx: 'auto',
-                    px: 3,
+                    px: 0,
                     py: 4,
                 }}>
-                <Text c="black"fontSize={[3, 4, 5]}>
-                    Velit proident in nisi dolore nulla et excepteur ullamco veniam. Irure anim anim id labore ipsum Lorem velit. Ut id anim anim id sit aliquip sit ad et. Nulla cupidatat qui cupidatat sunt nostrud ipsum aliquip amet occaecat dolor do do quis. Anim nostrud occaecat culpa veniam labore elit id nulla. Culpa non nulla id laboris et et consequat aliqua culpa incididunt nostrud laborum eiusmod.
-                </Text>
+                <Img fluid={edges[0].node.childImageSharp.fluid}/>
             </Box>
+
+            <Box
+                sx={{
+                    maxWidth: 512,
+                    mx: 'auto',
+                    px: 0,
+                    py: 4,
+                }}>
+                <Img fluid={edges[2].node.childImageSharp.fluid}/>
+            </Box>
+
+            <Box
+                sx={{
+                    maxWidth: 512,
+                    mx: 'auto',
+                    px: 0,
+                    py: 4,
+                }}>
+                <Img fluid={edges[3].node.childImageSharp.fluid}/>
+            </Box>
+
+
             <Footer/>
         </Layout>
     )
