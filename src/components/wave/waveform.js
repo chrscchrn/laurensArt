@@ -1,7 +1,8 @@
-import React from 'react'
-import ReactWaves from '@dschoon/react-waves'
+import React, { lazy, Suspense} from 'react'
 import audio from '../../images/sound/audio.mp3'
 import './wave.css'
+
+const ReactWaves = lazy(() => import('@dschoon/react-waves'), "default");
 
 export default class Waveform extends React.Component {
     constructor(props) {
@@ -35,41 +36,43 @@ export default class Waveform extends React.Component {
     render() {
         return (
         <div className={'container example'}>
-            <div className="play button"
+            <button className="play button"
                 onClick={() => { this.setState({ playing: !this.state.playing }) }}
                 style={{left: '-99px'}}
             >
                 <a/>
-            { !this.state.playing ? '▶️' : '⏹' }
-            </div>
-            <div className="skip button"
+            { !this.state.playing ? '▶' : '||' }
+            </button>
+            {/* <div className="skip button"
                 onClick={this.state.wavesurfer && this.skipAhead}
                 style={
                 this.state.wavesurfer ? {} : {opacity: '.4', cursor: 'default'}
                 }
             >
             { '⏩' }
-            </div>
-            <ReactWaves
-            audioFile={audio}
-            className='react-waves'
-            options={{
-                barHeight: 1,
-                cursorWidth: 2,
-                cursorColor: '#b4abea',
-                height: 200,
-                hideScrollbar: true,
-                progressColor: '#c2bce7',
-                responsive: true,
-                waveColor: '#555555e3',
-            }}
-            volume={1}
-            zoom={1}
-            playing={this.state.playing}
-            pos={this.state.pos}
-            onPosChange={this.onPosChange}
-            onSeek={this.onSeek}
-            />
+            </div> */}
+            <Suspense fallback={<div>Loading...</div>}>
+                <ReactWaves
+                audioFile={audio}
+                className='react-waves'
+                options={{
+                    barHeight: 1,
+                    cursorWidth: 2,
+                    cursorColor: '#b4abea',
+                    height: 200,
+                    hideScrollbar: true,
+                    progressColor: '#c2bce7',
+                    responsive: true,
+                    waveColor: '#555555e3',
+                }}
+                volume={1}
+                zoom={1}
+                playing={this.state.playing}
+                pos={this.state.pos}
+                onPosChange={this.onPosChange}
+                onSeek={this.onSeek}
+                />
+            </Suspense>
         </div>
         )
     }
