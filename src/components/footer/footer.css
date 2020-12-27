@@ -9,3 +9,15 @@ footer {
 #footerBorder {
     border: 1px solid rgba(128, 128, 128, 0.247);
 }
+
+@media only screen and (max-width: 800px) {
+    #footerContainer {
+        padding: 2rem 6rem 1rem 6rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #footerContainer {
+        padding: 0;
+    }
+}
