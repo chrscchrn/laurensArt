@@ -1,75 +1,76 @@
-import React, { useEffect, useRef, useState } from "react";
-import WaveSurfer from "wavesurfer.js";
+import React from 'react'
+import ReactWaves from '@dschoon/react-waves'
+import audio from '../../images/sound/audio.mp3'
+import './wave.css'
 
-const formWaveSurferOptions = ref => ({
-    container: ref,
-    waveColor: "lightGray",
-    progressColor: "#c2bce7",
-    cursorColor: "Red",
-    barWidth: 3,
-    barRadius: 3,
-    responsive: true,
-    height: 150,
-    normalize: true,
-    partialRender: true
-});
+export default class Waveform extends React.Component {
+    constructor(props) {
+        super(props);
 
-export default function Waveform({ url }) {
-    const waveformRef = useRef(null);
-    const wavesurfer = useRef(null);
-    const [playing, setPlay] = useState(false);
-    const [volume, setVolume] = useState(0.5);
+        this.state = {
+        wavesurfer: null,
+        playing: false,
+        pos: 0,
+        };
+    }
 
-    useEffect(() => {
-        setPlay(false);
-
-        const options = formWaveSurferOptions(waveformRef.current);
-        wavesurfer.current = WaveSurfer.create(options);
-
-        wavesurfer.current.load(url);
-
-        wavesurfer.current.on("ready", function() {
-        if (wavesurfer.current) {
-            wavesurfer.current.setVolume(volume);
-            setVolume(volume);
-        }
-        });
-
-        return () => wavesurfer.current.destroy();
-    }, [url]);
-
-    const handlePlayPause = () => {
-        setPlay(!playing);
-        wavesurfer.current.playPause();
-    };
-
-    const onVolumeChange = e => {
-        const { target } = e;
-        const newVolume = +target.value;
-
-        if (newVolume) {
-        setVolume(newVolume);
-        wavesurfer.current.setVolume(newVolume || 1);
+    onPosChange = (pos, wavesurfer) => {
+        if (pos !== this.state.pos) {
+        this.setState({ pos, wavesurfer });
         }
     };
 
-    return (
-        <div>
-            <div id="waveform" ref={waveformRef} />
-            <div className="controls">
-                <button onClick={handlePlayPause}>{!playing ? "Play" : "Pause"}</button>
-                <input
-                type="range"
-                id="volume"
-                name="volume"
-                min="0.01"
-                max="1"
-                step=".025"
-                onChange={onVolumeChange}
-                defaultValue={volume}
-                />
-                <label htmlFor="volume">Volume</label>
+    onSeek = ({ pos, wavesurfer }) => {
+        console.log(pos);
+    }
+
+    skipAhead = () => {
+        this.state.wavesurfer.seekTo(this.secondsToPosition(this.state.pos + 10));
+    };
+
+    secondsToPosition = (sec) => {
+        return 1 / this.state.wavesurfer.getDuration() * sec;
+    };
+
+    render() {
+        return (
+        <div className={'container example'}>
+            <div className="play button"
+                onClick={() => { this.setState({ playing: !this.state.playing }) }}
+                style={{left: '-99px'}}
+            >
+                <a/>
+            { !this.state.playing ? '▶️' : '⏹' }
             </div>
+            <div className="skip button"
+                onClick={this.state.wavesurfer && this.skipAhead}
+                style={
+                this.state.wavesurfer ? {} : {opacity: '.4', cursor: 'default'}
+                }
+            >
+            { '⏩' }
+            </div>
+            <ReactWaves
+            audioFile={audio}
+            className='react-waves'
+            options={{
+                barHeight: 1,
+                cursorWidth: 2,
+                cursorColor: '#b4abea',
+                height: 200,
+                hideScrollbar: true,
+                progressColor: '#c2bce7',
+                responsive: true,
+                waveColor: '#555555e3',
+            }}
+            volume={1}
+            zoom={1}
+            playing={this.state.playing}
+            pos={this.state.pos}
+            onPosChange={this.onPosChange}
+            onSeek={this.onSeek}
+            />
         </div>
-    );
+        )
+    }
 }

@@ -12,7 +12,7 @@ export default {
         monospace: 'Menlo, monospace',
     },
     colors: {
-        black: "hsla(0, 0%, 0%, 0.8)",
+        black: "#555555e3",
         otherBlack:"#232323",
         lightBluePrimary: "#aad1ff",
         blueDark: "#6fb0ff",

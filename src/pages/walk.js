@@ -43,7 +43,6 @@ const Walk = () => {
                 <Header c="black"fontSize={[4, 5, 6]}>
                     A 3D render of a Walk I Took in Brown University
                 </Header>
-
             </Box>
 
             <Box
@@ -85,8 +84,6 @@ const Walk = () => {
                 }}>
                 <Img fluid={edges[3].node.childImageSharp.fluid}/>
             </Box>
-
-
             <Footer/>
         </Layout>
     )

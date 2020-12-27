@@ -30,8 +30,6 @@ const Providence = () => {
         }
     `)
 
-    console.log(edges);
-
     return (
         <Layout>
             <Nav bg="greenPrimary"/>
