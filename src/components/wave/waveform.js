@@ -1,8 +1,7 @@
-import React, { lazy, Suspense} from 'react'
+import React from 'react'
 import audio from '../../images/sound/audio.mp3'
 import './wave.css'
-
-const ReactWaves = lazy(() => import('@dschoon/react-waves'), "default");
+import ReactWaves from '@dschoon/react-waves'
 
 export default class Waveform extends React.Component {
     constructor(props) {
@@ -51,7 +50,7 @@ export default class Waveform extends React.Component {
             >
             { '⏩' }
             </div> */}
-            <Suspense fallback={<div>Loading...</div>}>
+            {typeof window !== 'undefined' && 
                 <ReactWaves
                 audioFile={audio}
                 className='react-waves'
@@ -71,8 +70,7 @@ export default class Waveform extends React.Component {
                 pos={this.state.pos}
                 onPosChange={this.onPosChange}
                 onSeek={this.onSeek}
-                />
-            </Suspense>
+                />}
         </div>
         )
     }
