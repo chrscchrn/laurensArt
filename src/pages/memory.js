@@ -89,11 +89,11 @@ const Memory = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[2, 3, 4]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                     A memory palace is an imaginary but familiar place that you create in your mind to keep mnemonic-images as a memorization technique. 
                 </Text>
                 <br/>
-                <Text c="gray" fontSize={[2, 3, 4]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                     The memory palace that I created for these set of projects is a dance studio I used to attend for many years. I used it to memorize 20 random words and made scenarios inspired by them to help me memorize all the words. 
                 </Text>
             </Box>
@@ -115,7 +115,7 @@ const Memory = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[3, 4, 5]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                     Birds-eye-view of the memory palace. My memory palace is a 1:1 replica of my old dance studio. The vignettes shown are different scenarios happening at different times within the studio.
                 </Text>
             </Box>
@@ -137,7 +137,7 @@ const Memory = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[3, 4, 5]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                     Water Fountain
                 </Text>
             </Box>
@@ -159,7 +159,7 @@ const Memory = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[3, 4, 5]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                     A good action shot in the middle of the chaos that’s happening in the main studio. 
                 </Text>
             </Box>
@@ -181,7 +181,7 @@ const Memory = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[3, 4, 5]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                     Ballerinas playing Wii Tennis
                 </Text>
             </Box>
@@ -213,7 +213,7 @@ const Memory = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[3, 4, 5]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                 My Final Moments: 
                     (For context, Aang from Avatar: The Last Airbender is about to finish me off with giant balls of playdough)
                     I wanted to emphasize how ridiculous this scene is with weird pictures of Aang’s poorly rendered face. It’s supposed to be stupid…
@@ -238,7 +238,7 @@ const Memory = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[3, 4, 5]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                 My Final Moments:
                     This scene is very theatrically dramatic (lights, positioning), I think it emphasizes the ridiculousness of it all.
                 </Text>
@@ -261,7 +261,7 @@ const Memory = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[3, 4, 5]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                     The Fallen Ballerinas:
                         My favourite shot from the memory palace
                 </Text>
@@ -284,7 +284,7 @@ const Memory = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[3, 4, 5]}>
+                <Text c="gray" fontSize={[3, 4, 5]} className="textBody">
                     The Fallen Ballerinas:
                         (Shown left to right: pile2, pile3)
                 </Text>

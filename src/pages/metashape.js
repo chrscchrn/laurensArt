@@ -66,7 +66,7 @@ const Metashape = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="gray" fontSize={[2, 3, 4]}>
+                <Text c="gray" fontSize={[2, 3, 4]} className="textBody">
                     3D scans of myself with my arms in different positions for each picture.
                 </Text>
             </Box>

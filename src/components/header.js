@@ -9,7 +9,8 @@ const Header = ({ children, c, fontSize }) => {
             sx={{ 
                 color: `${c}`,
                 fontFamily: 'Rozha One', 
-                fontWeight: 'normal' }}>
+                fontWeight: 'normal',
+                textShadow: "1px 1px #4c4c4c47" }}>
             {children}
         </Heading>
     )

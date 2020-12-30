@@ -71,6 +71,18 @@ const Artichoke = () => {
 
             <Box
                 sx={{
+                    maxWidth: 768,
+                    mx: 'auto',
+                    px: 3,
+                    py: 4,
+                }}>
+                <Text c="black"fontSize={[3, 4, 5]} className="textBody">
+                    Black conte crayons, line and tone studied separately, inconsideration towards accuracy 30 min.
+                </Text>
+            </Box>
+
+            <Box
+                sx={{
                     maxWidth: 512,
                     mx: 'auto',
                     px: 0,
@@ -86,8 +98,8 @@ const Artichoke = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="black"fontSize={[3, 4, 5]}>
-                    Black conte crayons, line and tone studied separately, inconsideration towards accuracy 30 min.
+                <Text c="black"fontSize={[3, 4, 5]} className="textBody">
+                    Compressed charcoal, focus on line and tone and their simultinaity, study of object’s relationship with light/shadows, 3 hrs.
                 </Text>
             </Box>
 
@@ -108,8 +120,8 @@ const Artichoke = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="black"fontSize={[3, 4, 5]}>
-                    Compressed charcoal, focus on line and tone and their simultinaity, study of object’s relationship with light/shadows, 3 hrs.
+                <Text c="black"fontSize={[3, 4, 5]} className="textBody">
+                    Brown and orange conte crayons, brown focused on tone, orange focused on line, quick draw, 10 min.
                 </Text>
             </Box>
 
@@ -130,8 +142,8 @@ const Artichoke = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="black"fontSize={[3, 4, 5]}>
-                    Brown and orange conte crayons, brown focused on tone, orange focused on line, quick draw, 10 min.
+                <Text c="black"fontSize={[3, 4, 5]} className="textBody">
+                    Lines created from charcoal residue on finger tips, focus on range of pressure to create depth, 20 min.
                 </Text>
             </Box>
 
@@ -152,8 +164,8 @@ const Artichoke = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="black"fontSize={[3, 4, 5]}>
-                    Lines created from charcoal residue on finger tips, focus on range of pressure to create depth, 20 min.
+                <Text c="black"fontSize={[3, 4, 5]} className="textBody">
+                    Artichoke sitting in a formal dining room staring at a grey fox skull compressed charcoal, combination of realism and minimalism to induce emotions from artichoke - personification, 2 hrs.
                 </Text>
             </Box>
 
@@ -166,18 +178,7 @@ const Artichoke = () => {
                 }}>
                 <Img fluid={final} alt=""/>
             </Box>
-
-            <Box
-                sx={{
-                    maxWidth: 768,
-                    mx: 'auto',
-                    px: 3,
-                    py: 4,
-                }}>
-                <Text c="black"fontSize={[3, 4, 5]}>
-                    Artichoke sitting in a formal dining room staring at a grey fox skull compressed charcoal, combination of realism and minimalism to induce emotions from artichoke - personification, 2 hrs.
-                </Text>
-            </Box>
+            
             <Footer/>
         </Layout>
     )

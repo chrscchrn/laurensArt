@@ -63,11 +63,11 @@ const Providence = () => {
                     px: 3,
                     py: 4,
                 }}>
-                <Text c="black"fontSize={[2, 3, 4]}>
+                <Text c="black" fontSize={[2, 3, 4]} className="textBody">
                     This is a collaboration between myself and one of my classmates, Lucinda. Her original drawing is the eight drawings that are contained within the white border in the middle of the piece. These sequence of drawings depict a map or journey to a certain place in downtown Providence. I followed this map of hers to the final destination and added my addition to her drawing. 
                 </Text>
                 <br/>
-                <Text c="black"fontSize={[2, 3, 4]}>
+                <Text c="black" fontSize={[2, 3, 4]} className="textBody">
                     Since her map had illustrations of this yellow character, I made a magenta-colored friend to follow them on their journey, as it’s how I felt when following her map, like I was indirectly joining her. It’s a distant yet intimate experience following something that somebody else made for you to do.
                 </Text>
             </Box>
