@@ -16,6 +16,8 @@ Gatsby also uses GraphQL, which is highly useful and more efficient than REST AP
 
 ## Usage
 
+Feel free to use this as a template!
+
 Start a new Gatsby App:
 ```
 npm init gatsby
