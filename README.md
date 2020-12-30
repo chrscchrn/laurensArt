@@ -12,7 +12,7 @@ Gatsby is a great way to make an efficient static website with React without usi
 I highly reccomend it if you want to keep working on your React skills because it not only eliminates the downside of React dynamic processing but you still have your own reusable components.
 <br/>
 <br/>
-Gatsby also uses GraphQL which was very useful for this and more efficient than REST API and storing the images in a cloud service. 
+Gatsby also uses GraphQL which was very useful for this and more efficient than REST API and storing the images in a cloud service. For websites with many images, it also has 'Gatsby-Image' which makes sure images blurred and preloaded before they are presented. Pretty cool.
 
 - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
