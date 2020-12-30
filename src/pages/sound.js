@@ -4,8 +4,7 @@ import Footer from '../components/footer/footer'
 import Header from '../components/header'
 import Layout from '../components/layout/layout'
 import Nav from '../components/nav/nav'
-// import Waveform from '../components/wave/waveform'
-// import audio from '../images/sound/audio.mp3'
+import Player from '../components/wave/player'
 
 const Sound = () => {
 
@@ -23,8 +22,11 @@ const Sound = () => {
                     Listen, Listen
                 </Header>
             </Box>
-
-            {/* <Waveform url={audio}/> */}
+            
+            <div style={{ textAlign: "-webkit-center" }}>
+                <Player/>
+            </div>
+            
             
             <Box
                 sx={{
