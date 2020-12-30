@@ -4,8 +4,8 @@ import Footer from '../components/footer/footer'
 import Header from '../components/header'
 import Layout from '../components/layout/layout'
 import Nav from '../components/nav/nav'
-import Waveform from '../components/wave/waveform'
-import audio from '../images/sound/audio.mp3'
+// import Waveform from '../components/wave/waveform'
+// import audio from '../images/sound/audio.mp3'
 
 const Sound = () => {
 
@@ -24,7 +24,7 @@ const Sound = () => {
                 </Header>
             </Box>
 
-            <Waveform url={audio}/>
+            {/* <Waveform url={audio}/> */}
             
             <Box
                 sx={{
