@@ -22,7 +22,6 @@ const Sound = () => {
                 <Header c="black"fontSize={[4, 5, 6]}>
                     Listen, Listen
                 </Header>
-
             </Box>
 
             <Waveform url={audio}/>

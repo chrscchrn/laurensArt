@@ -42,14 +42,6 @@ export default class Waveform extends React.Component {
                 <a/>
             { !this.state.playing ? '▶' : '||' }
             </button>
-            {/* <div className="skip button"
-                onClick={this.state.wavesurfer && this.skipAhead}
-                style={
-                this.state.wavesurfer ? {} : {opacity: '.4', cursor: 'default'}
-                }
-            >
-            { '⏩' }
-            </div> */}
             {typeof window !== 'undefined' && 
                 <ReactWaves
                 audioFile={audio}
