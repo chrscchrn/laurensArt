@@ -8,9 +8,11 @@
   <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
 </a>
 <br/>
-Gatsby is a great way to make a static website with React without using a JAMstack technology. I highly reccomend it if you want to keep working on your React skills because it not only eliminates the downside of React dynamic processing but you still have your own reusable components.
-
-Gatsby also uses GraphQL, which is highly useful and more efficient than REST API. 
+Gatsby is a great way to make a static website with React without using a JAMstack technology. 
+I highly reccomend it if you want to keep working on your React skills because it not only eliminates the downside of React dynamic processing but you still have your own reusable components.
+<br/>
+<br/>
+Gatsby also uses GraphQL which was very useful for this and more efficient than REST API and storing the images in a cloud service. 
 
 - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
