@@ -1,82 +1,27 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Artist Portfolio
+
+<a href="https://chrscchrn.github.io/laurensArt/">This website</a> is a static portfolio made made React for my sister while she is pursuing art in college. 
 
 
-1. replace :hover with a more mobile friendly verison
-2. Fix mq details 
-3. ordering on scrapbook 
-4. <del>titles on work</del>
+## Tech
+<a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+  <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+</a>
+<br/>
+Gatsby is a great way to make a static website with React without using a JAMstack technology. I highly reccomend it if you want to keep working on your React skills because it not only eliminates the downside of React dynamic processing but you still have your own reusable components.
 
-## useful stuff
+Gatsby also uses GraphQL, which is highly useful and more efficient than REST API. 
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Usage
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Start a new Gatsby App:
+```
+npm init gatsby
+```
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-
-
-
-  Container
-
-    Header
-      Title
-      subTitle
-
-      Something Interesting Maybe a Quote
-    
-    GIF
-
-
-    Enter button
-
-    Footer
-
-
-
-/work
-  - sort through photos and add titles accordingly
-  - also make the margin and padding in [ 3, 4, 5] format for responsiveness 
-Root:
-
-  Container
-
-    section
-      Header
-      GIF
-    __________
-
-    section
-      pic   h1
-    __________
-
-    section
-      h1    pic
-    __________
-    
-    section
-      pic   h1
-    __________
-    
-    section
-      h1    pic
-    __________
-      
-    section
-      pic   h1
-    __________
-
-  Footer
+Try this one out:
+```
+npm install
+```
