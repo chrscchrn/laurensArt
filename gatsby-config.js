@@ -4,6 +4,7 @@ module.exports = {
     title: "laurens-art",
     siteUrl: "https://chrscchrn.github.io/laurensArt/",
     description: "Browse art ranging from paintings to 3D renderings of the Providence area. Lauren's Art is a portfolio full of all kinds of art.",
+    image: "favicon-32x32.png",
   },
   plugins: [
     "gatsby-plugin-sharp",
