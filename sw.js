@@ -27,29 +27,29 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-864375932eb1747371c3.js"
+    "url": "webpack-runtime-75a21b7b6134266046fc.js"
   },
   {
-    "url": "styles.97f1a6668ae77a77895f.css"
+    "url": "styles.8925abdf61eb1e6f99b1.css"
   },
   {
     "url": "styles-407fe62976dc5310c43e.js"
   },
   {
-    "url": "framework-2d6b7d2e2be378715b78.js"
+    "url": "framework-ee8a4bba4771daaa13e7.js"
   },
   {
-    "url": "dc6a8720040df98778fe970bf6c000a41750d3ae-1611da20b6d998dd3799.js"
+    "url": "dc6a8720040df98778fe970bf6c000a41750d3ae-3bdf3c35827a16191508.js"
   },
   {
-    "url": "app-f7b8c4cacf565a3ed832.js"
+    "url": "app-ae1308e8060427081d64.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "1045f8a06d6b2afed163543b49bca299"
+    "revision": "40c1b3e4eaf752b181a8c8107c884382"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-fd4fb51a6fac1c18bdde.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -57,10 +57,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "b1eeeb463c38c9041c848fb01df64ddb"
+    "revision": "e3103c06862fbcb77863e592f0a77caf"
   },
   {
-    "url": "polyfill-949fcd0bc187dea82bc3.js"
+    "url": "polyfill-d62ed543f485dbcb685a.js"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -152,7 +152,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/laurensArt/app-f7b8c4cacf565a3ed832.js`))) {
+  if (!resources || !(await caches.match(`/laurensArt/app-ae1308e8060427081d64.js`))) {
     return await fetch(event.request)
   }
 
