@@ -4,11 +4,13 @@ import { Box, Image, Text } from 'rebass'
 import Layout from '../components/layout/layout'
 import Header from '../components/header'
 import anime from '../images/anime/animeGif.gif'
+import Application from '../components/meta'
 
 const IndexPage = () => {
 
     return (
         <Layout>
+            <Application/>
             <Box
                 sx={{
                     maxWidth: [768, "100%"],

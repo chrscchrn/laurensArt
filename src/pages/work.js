@@ -5,6 +5,7 @@ import MenuItem from '../components/menuItem/menuItem'
 import { Box, Flex } from "rebass"
 import { graphql, useStaticQuery } from "gatsby"
 import Footer from "../components/footer/footer"
+import Application from '../components/meta'
 
 const bgColors = [ 'pinkPrimary pinkDark', 'lightBluePrimary blueDark', 'purplePrimary purpleDark', 'creamPrimary creamDark', 'greenPrimary greenDark' ];
 const [ bg, d ] = bgColors[Math.floor(Math.random() * bgColors.length)].split(" ");
@@ -97,6 +98,7 @@ const MainPage = () => {
         mx: 0,
         px: 0,
       }}>
+      <Application/>
       <Nav bg={bg}/>
       <Header c={d} fontSize={[5, 6, 7]}>
         Collection
