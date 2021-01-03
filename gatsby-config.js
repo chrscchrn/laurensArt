@@ -2,7 +2,8 @@ module.exports = {
   pathPrefix: "/laurensArt",
   siteMetadata: {
     title: "laurens-art",
-    siteUrl: "https://chrscchrn.github.io/laurensArt/"
+    siteUrl: "https://chrscchrn.github.io/laurensArt/",
+    description: "Browse art ranging from paintings to 3D renderings of the Providence area. Lauren's Art is a portfolio full of all kinds of art.",
   },
   plugins: [
     "gatsby-plugin-sharp",
