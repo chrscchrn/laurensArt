@@ -8,6 +8,7 @@ const Footer = () => {
             <footer>
                 &copy; Lauren Cochran | Design by her awesome brother
                 <br/>
+                <br/>
                 <a href="cochranc.com">cochranc.com</a>
             </footer>
         </div>
