@@ -7,6 +7,8 @@ const Footer = () => {
             <hr id="footerBorder"/>
             <footer>
                 &copy; Lauren Cochran | Design by her awesome brother
+                <br/>
+                <a href="cochranc.com">cochranc.com</a>
             </footer>
         </div>
     )
