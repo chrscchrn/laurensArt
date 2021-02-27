@@ -9,7 +9,8 @@ const Footer = () => {
                 &copy; Lauren Cochran | Design by her awesome brother
                 <br/>
                 <br/>
-                <a href="cochranc.com">cochranc.com</a>
+                <a href="https://cochranc.com">cochranc.com</a>
+                <br/>
             </footer>
         </div>
     )
